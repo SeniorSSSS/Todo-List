@@ -29,50 +29,72 @@ h1 {
     text-align: center;
     padding: 1em;
     font-weight: bolder;
+    margin: 1em 1em 0em 1em;
 }
 
 /* .block__element--modifier (if an element is standalone then it is actually a block */
 
 .UserInterface {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    background-color: black;
-}
-.UserInterface h2 {
-    color: white;
-    text-align: center;
-    font-weight: 700;
-    padding: 0.40em;
+    grid-template-rows: 1fr 1fr; 
+    background-color: darkcyan;
+    
 }
 
 button {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    background-color: rgb(187, 182, 255);
     color: black;
     font-weight: bolder;
+    font-size: 1.4em;
     padding: 0.40em;
     margin: 0.25em;
 }
-
-.UserInterface_TodolistReordererButtonArea {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-content: center;
-    
-}
-.UserInterface_TodolistReordererButtonArea-RearrangeButtons {
-    display: flex; 
-    justify-content: center; 
-    
+.UserInterface-AddButtons {
+ display: flex;
+ justify-content: space-evenly;
 }
 
-.UserInterface_TodolistReordererButtonArea-projectbuttoncontainer {
+.UserInterface-AddButtons button {
+    background-color: rgb(187, 182, 255);
+}
+
+.UserInterface-RearrangeButtons {
     display: flex;
-    justify-content: center;
-   }
+    justify-content: space-evenly;
+}
 
+.UserInterface-RearrangeButtons button {
+    background-color: rgb(182, 244, 255);
+}
 
 .ProjectandTodoArea {
-    background-color: rgb(12, 85, 75);
-    color: white;
+    display: block;
+    background-color: #225764;
+    color: black;
+    font-weight: bolder;
+    
 }
+
+
+div[class^='projectarea']{
+    display:flex; 
+    gap: 1em;
+    margin: 1em 0em 1em 0em;
+    
+}
+.todoitem {
+    background-color: #79d4ff;
+    border-radius: 25px; 
+    padding: 0.8em;
+    margin-bottom: 1em;
+}
+
+.Title {
+    color: rgb(127, 250, 244);
+    text-decoration: underline;
+    font-weight: bolder;
+}
+
+/* add css that seperates the projects & gives them different colors. ->ones that starts with .projectarea
+add css that  makes the todositems besides each other and not below.->todoitem
+you can give projects names by making a function that equals the divs inner text */

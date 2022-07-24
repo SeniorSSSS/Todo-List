@@ -13,20 +13,21 @@
     <h1>To-Do App!</h1>
     <!-- The following Section Contains the User Interface -->
     <section class="UserInterface">
-        <h2>To Rearrange the Todo-List within a Project!</h2>
-        <div class="UserInterface_TodolistReordererButtonArea">
-            <div class="UserInterface_TodolistReordererButtonArea-projectbuttoncontainer">
+        <div class = "UserInterface-AddButtons">
+            <button id="AddProjectButton">Add Project</button>
+            <button id="AddTodoItem">Add TodoItem</button>
+        </div>
+        <br>
+        <div class="UserInterface-RearrangeButtons">
                 <button>Select Project</button>
-            </div>
-            <div class="UserInterface_TodolistReordererButtonArea-RearrangeButtons">
                 <button>Rearrange by: DueDate</button>
                 <button>Rearrange by: Priority Level</button>
-            </div>
+            
         </div>
+
     </section>
     <!-- The following Section Contains thethe area with the projects & Todo Items-->
-    <section class="ProjectandTodoArea">
-        <p>This is a placeholder text for where the todo-items will go</p>
+    <section class="ProjectandTodoArea" id="P&TArea">
     </section>
     <script src="main.js"></script>
 </body>

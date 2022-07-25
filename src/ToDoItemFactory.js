@@ -5,10 +5,5 @@ export const ToDoItemFactory = (title,description,duedate,priority,ordervalue) =
         description: description,
         duedate: duedate,
         priority: priority,
-        ordervalue: ordervalue,
-        scare() {
-           console.log(age);
-       }
    } 
 }
-// To make a specific object call the factory with necessary arguments & assign the return value to a variable.

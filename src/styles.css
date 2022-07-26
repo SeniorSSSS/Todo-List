@@ -66,6 +66,13 @@ button {
 .UserInterface-RearrangeButtons button {
     background-color: rgb(182, 244, 255);
 }
+.UserInterface-AdditionalFunctionalityButtons {
+    display: flex;
+    justify-content: space-evenly;
+}
+.UserInterface-AdditionalFunctionalityButtons button {
+    background-color: lightgreen;
+}
 
 .ProjectandTodoArea {
     display: block;
@@ -80,21 +87,23 @@ div[class^='projectarea']{
     display:flex; 
     gap: 1em;
     margin: 1em 0em 1em 0em;
-    
 }
-.todoitem {
+
+div[class^='todoitem'] {
     background-color: #79d4ff;
     border-radius: 25px; 
     padding: 0.8em;
     margin-bottom: 1em;
 }
 
-.Title {
+div[class^='Title'] {
     color: rgb(127, 250, 244);
     text-decoration: underline;
     font-weight: bolder;
 }
 
-/* add css that seperates the projects & gives them different colors. ->ones that starts with .projectarea
-add css that  makes the todositems besides each other and not below.->todoitem
-you can give projects names by making a function that equals the divs inner text */
+#invisible {
+    display: none;
+}
+
+

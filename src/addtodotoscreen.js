@@ -4,8 +4,10 @@ export function addtodotoprojectarea() {
 
         let div = document.createElement('div');
 
-        div.innerText = 'The title: ' + DefaultProject[i].title + '\n' + 'The description: ' + DefaultProject[i].description + '\n' + 'The due date: ' + DefaultProject[i].duedate + '\n' + 'The Priority: ' + DefaultProject[i].priority;
         
+
+        div.innerText = 'The title: ' + DefaultProject[i].title + '\n' + 'The description: ' + DefaultProject[i].description + '\n' + 'The due date: ' + DefaultProject[i].duedate + '\n' + 'The Priority: ' + DefaultProject[i].priority;
+
         ProjectandTodoArea.appendChild(div);
         console.log(i);
 }    }

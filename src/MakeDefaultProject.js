@@ -19,12 +19,15 @@ export function MakeDefaultProject(ArrayforProjects) {
     const desiredprojectarea = document.querySelector('.projectarea' + 0);
 
     let defaultdiv = document.createElement('div');
-    defaultdiv.className = "todoitem";
-    defaultdiv.innerText = 'The title: ' + ArrayforProjects[0][0].title + '\n' + 'The description: ' + ArrayforProjects[0][0].description + '\n' + 'The duedate: ' + ArrayforProjects[0][0].duedate + '\n' + 'The Priority: ' + ArrayforProjects[0][0].priority;
+    defaultdiv.className = "todoitem"+0;
+    
+    defaultdiv.innerText = "Todo Item:" + 0 + '\n' +'The title: ' + ArrayforProjects[0][0].title + '\n' + 'The description: ' + ArrayforProjects[0][0].description + '\n' + 'The duedate: ' + ArrayforProjects[0][0].duedate + '\n' + 'The Priority: ' + ArrayforProjects[0][0].priority;
     desiredprojectarea.appendChild(defaultdiv);
 
     let defaultdiv2 = document.createElement('div');
-    defaultdiv2.className = "todoitem";
-    defaultdiv2.innerText = 'The title: ' + ArrayforProjects[0][1].title + '\n' + 'The description: ' + ArrayforProjects[0][1].description + '\n' + 'The duedate: ' + ArrayforProjects[0][1].duedate + '\n' + 'The Priority: ' + ArrayforProjects[0][1].priority;
+    defaultdiv2.className = "todoitem"+1;
+  
+    defaultdiv2.innerText = "Todo Item:" + 1 + '\n' + 'The title: ' + ArrayforProjects[0][1].title + '\n' + 'The description: ' + ArrayforProjects[0][1].description + '\n' + 'The duedate: ' + ArrayforProjects[0][1].duedate + '\n' + 'The Priority: ' + ArrayforProjects[0][1].priority;
     desiredprojectarea.appendChild(defaultdiv2);
 }
+

@@ -7,9 +7,8 @@ export function addtodotoprojectarea(projectarrayindex,ArrayforProjects) {
     const desiredprojectarea = document.querySelector('.projectarea' + projectarrayindex);
 
     let div = document.createElement('div');
-    div.className = "todoitem";
-    
-    div.innerText = 'The title: ' + ArrayforProjects[projectarrayindex][addedtodoitem].title + '\n' + 'The description: ' + ArrayforProjects[projectarrayindex][addedtodoitem].description + '\n' + 'The duedate: ' + ArrayforProjects[projectarrayindex][addedtodoitem].duedate + '\n' + 'The Priority: ' + ArrayforProjects[projectarrayindex][addedtodoitem].priority;
+    div.className = ("todoitem" + addedtodoitem);
+    div.innerText = "Todo Item: " + addedtodoitem + '\n' + 'The Title: ' + ArrayforProjects[projectarrayindex][addedtodoitem].title + '\n' + 'The Description: ' + ArrayforProjects[projectarrayindex][addedtodoitem].description + '\n' + 'The DueDate: ' + ArrayforProjects[projectarrayindex][addedtodoitem].duedate + '\n' + 'The Priority: ' + ArrayforProjects[projectarrayindex][addedtodoitem].priority;
 
     desiredprojectarea.appendChild(div);
 }

@@ -6,9 +6,10 @@ export function addmodifiedtodostoprojectarea(projectarrayindex,ArrayforProjects
     for (let index = 0; index < ArrayforProjects[projectarrayindex].length; index++) {
     //makes the div stuff
     let div = document.createElement('div');
-    div.className = "todoitem";
+    div.className = "todoitem"+ index;
+  
     //adds the text
-    div.innerText = 'The title: ' + ArrayforProjects[projectarrayindex][index].title + '\n' + 'The description: ' + ArrayforProjects[projectarrayindex][index].description + '\n' + 'The duedate: ' + ArrayforProjects[projectarrayindex][index].duedate + '\n' + 'The Priority:' + ArrayforProjects[projectarrayindex][index].priority;
+    div.innerText = "Todo Item: " + index + '\n' +'The title: ' + ArrayforProjects[projectarrayindex][index].title + '\n' + 'The description: ' + ArrayforProjects[projectarrayindex][index].description + '\n' + 'The duedate: ' + ArrayforProjects[projectarrayindex][index].duedate + '\n' + 'The Priority:' + ArrayforProjects[projectarrayindex][index].priority;
     //apendsit
     desiredprojectarea.appendChild(div);
     }

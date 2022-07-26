@@ -8,7 +8,8 @@ export function Addprojectstoscreen(projectarrayindex) {
 
     let div = document.createElement('div');
     div.className = ("projectarea" + i);
+    div.id = 'insideofprojectarea';
     addtitlediv(projectarrayindex);
-    
+
     ProjectandTodoArea.appendChild(div);
 }
